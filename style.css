@@ -50,7 +50,6 @@ body {
   background: #4c7cff;
   border-radius: 999px;
   box-shadow: #4c7cff 0 10px 20px -10px;
-  box-sizing: border-box;
   color: #FFFFFF;
   cursor: pointer;
   font-family: Inter,Helvetica,"Apple Color Emoji","Segoe UI Emoji",NotoColorEmoji,"Noto Color Emoji","Segoe UI Symbol","Android Emoji",EmojiSymbols,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans",sans-serif;
@@ -60,10 +59,6 @@ body {
   opacity: 1;
   outline: 0 solid transparent;
   padding: 8px 18px;
-  user-select: none;
-  -webkit-user-select: none;
-  touch-action: manipulation;
-  word-break: break-word;
   border: 0;
 }
 
@@ -100,4 +95,32 @@ body {
     text-align: center;
     font-size: 2rem;
     color: #111111;
+}
+
+/* Responsive */
+
+@media screen and (max-width: 620px) {
+    .mainContent {
+        width: 300px;
+    }
+
+    .buttonSearch {
+        width: 80px;
+    }
+
+    .inputText {
+        width: 100%;
+    }
+
+    .countryFlag {
+        width: 150px;
+    }
+
+    .countryName {
+        font-size: 1.2rem;
+    }
+
+    .countryInfo {
+        font-size: 0.9rem;
+    }
 }
